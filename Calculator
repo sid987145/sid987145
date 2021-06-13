@@ -1,0 +1,43 @@
+#include<iostream>
+#include<bits/stdc++.h>
+#include <stdio.h>
+using namespace std;
+int main()
+{
+    int a,b,z;
+    char operation;
+    while(operation!='e')
+    {
+    cout<<"Choose the operation +   -  *  /  %"<<endl;
+    cout<<"Press e to exit"<<endl;
+    cin>>operation;
+    switch (operation)
+    {
+        case '+':   cout<<"Enter the numbers u want to do operations"<<endl;
+                    cin>>a>>b;
+                    cout<<"Answer "<<a+b<<endl;
+                       break;
+        case '-':   cout<<"Enter the numbers u want to do operations"<<endl;
+                    cin>>a>>b;
+                    cout<<"Answer "<<a-b<<endl;
+                    break;
+        case '*':   cout<<"Enter the numbers u want to do operations"<<endl;
+                    cin>>a>>b;
+                    cout<<"Answer "<<a*b<<endl;
+                    break;
+        case '/':   cout<<"Enter the numbers u want to do operations"<<endl;
+                    cin>>a>>b;
+                    cout<<"Answer "<<a/b<<endl;
+                    break;
+         case '%':   cout<<"Enter the numbers u want to do operations"<<endl;
+                    cin>>a>>b;
+                    cout<<"Answer "<<a%b<<endl;
+                    break;
+                    
+        case 'e': exit(0);
+        default:cout<<"Type the right operation"<<endl;
+                    break;
+    }
+    }
+    return 0;
+}
